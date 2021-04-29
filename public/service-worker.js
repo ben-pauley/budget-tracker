@@ -1,7 +1,17 @@
 const CACHE_NAME = "static-cache-v2";
 const DATA_CACHE_NAME = "data-cache-v1";
 
-const FILES_TO_CACHE = ["/", "/index.html", "/index.js", "/styles.css"];
+const FILES_TO_CACHE = [
+  "/",
+  "/index.html",
+  "/styles.css",
+  "/index.js",
+  "/db.js",
+  "/icons/icon-192x192.png",
+  "/icons/icon-512x512.png",
+  "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
+  "https://cdn.jsdelivr.net/npm/chart.js@2.8.0",
+];
 
 self.addEventListener("install", function (evt) {
   evt.waitUntil(
@@ -32,7 +42,7 @@ self.addEventListener("activate", function (evt) {
 
 self.addEventListener("fetch", function (evt) {
   // The following code caches responses for requests
-  if (evt.request.url.includes("./routes/api/")) {
+  if (evt.request.url.includes("./routes/api.js")) {
     evt.respondWith(
       caches
         .open(DATA_CACHE_NAME)
