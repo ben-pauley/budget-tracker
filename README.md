@@ -12,6 +12,8 @@ This application does not need to be installed, as it can be viewed live on Hero
 
 ![homepage](/assets/img/app1.png?raw=true)
 
+![graph](/assets/img/app2.png?raw=true)
+
 ## Software Used
 
 The development of this project was completed using Visual Studio Code, with MongoDB Robo3T to view the database and collections on my local machine, and then MongoDB Atlas to deploy the application on Heroku.
