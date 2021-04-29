@@ -1,4 +1,4 @@
-# Workout Tracker
+# Budget Tracker
 
 ## My Repository
 
